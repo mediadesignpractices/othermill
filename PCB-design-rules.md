@@ -1,4 +1,4 @@
-#Design Rules Othermill
+#PCB Design Rules Othermill
 
 ## These are reccomended design rules for othermill that can be integrated in to your board design.
 
