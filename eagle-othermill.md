@@ -54,20 +54,33 @@ There are two fixtures typically used with the mill: the aluminum spoil board an
 
 ## Setup Material (pt. 2)
 
-1. Cover one side of the Circuit board evenly with double sided tape. Be careful not to overlap any strips of tape, as we want the board to sit as evenly on the spoil board as possible otherwise our holes will be at an angle.
+1. Cover one side of the Circuit board evenly with double sided tape. Be careful not to overlap any strips of tape, as we want the board to sit as evenly on the spoil board as possible.
 
 2. Trim any tape that hangs past the edge. Tape on the edges could also make the board uneven on the spoil board surface. I use a hardware store razor blade for this but an Xacto knife would work also.
 
-3. Now align the bottom left corner of the board into the corner of the Bracket so that the side and bottom edge are flush against the Bracket. Press firmly with your hands across all parts of the board so that it lays flat and feels firmly attached. It should look like this:
+3. Align the bottom left corner of the board into the corner of the Bracket so that the side and bottom edge are flush. Press firmly with your hands across all parts of the board so that it lays flat and feels firmly attached. It should look like this:
 
 <insert photo here>
 
 
 ## Importing your EAGLE file into Otherplan
 
- Otherplan, can import .brd files directly from EAGLE (hoorray, no Gerber file nonsense!). To import your .brd file click Import Files in the Otherplan setup window and select your file. If you have done this correctly you should see your PCB design on the material in the UI.
+ Otherplan, can import .brd files directly from EAGLE (hooray, no Gerber file nonsense!).
+
+ 1. To import your .brd file click Import Files in the Otherplan setup window and select your file. If you have done this correctly you should see your PCB design on the material in the UI.
 
  (insert photo of the above here)
 
 
-##
+
+## Selecting Mills / Configuring Feeds and Speeds
+
+blah blah
+
+
+## Flight Check
+
+
+## Changing Endmills
+
+## Flipping the Board
