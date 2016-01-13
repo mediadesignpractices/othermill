@@ -4,7 +4,7 @@ Casey Anderson, Winter 2016
 
 ## Introduction
 
-This article provides instructions for producing a double-sided `PCB`, designed in EAGLE, on MDP's Othermill. The acronym `PCB` stands for printed circuit board. Since this is double-sided, we will stick with `Pin Through Hole` (often shortened to `PTH`) components.
+This article provides instructions for producing a double-sided `PCB`, designed in EAGLE, on MDP's Othermill. The acronym `PCB` stands for `Printed Circuit Board`. Since this is double-sided, we will stick with `Pin Through Hole` (often shortened to `PTH`) components.
 
 ## CNC overview
 
@@ -65,7 +65,7 @@ There are two fixtures typically used with the mill: the aluminum `spoil board` 
 
 1. Cover one side of the Circuit board evenly with double sided tape. Be careful not to overlap any strips of tape, the board needs to sit as evenly on the `spoil board` as possible.
 
-2. Trim any tape that hangs past the edge. Tape on the edges could also make the board uneven on the spoil board surface. I use a hardware store razor blade for this but an Xacto knife would also work.
+2. Trim any tape that hangs past the edge. Tape on the edges could also make the board uneven on the `spoil board` surface. I use a hardware store razor blade for this but an Xacto knife would also work.
 
 3. Align the bottom left corner of the board into the corner of the `bracket` so that the side and bottom edge are flush. Press firmly with your hands across all parts of the board so that it lays flat and feels firmly attached. It should look like this:
 
