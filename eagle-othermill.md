@@ -67,7 +67,9 @@ There are two fixtures typically used with the mill: the aluminum `spoil board` 
 
 2. Trim any tape that hangs past the edge. Tape on the edges could also make the board uneven on the `spoil board` surface. I use a hardware store razor blade for this but an Xacto knife would also work.
 
-3. Align the bottom left corner of the board into the corner of the `bracket` so that the side and bottom edge are flush. Press firmly with your hands across all parts of the board so that it lays flat and feels firmly attached. It should look like this:
+3. Below the `setup` window you will see another window dedicated to moving things around. Click `Loading` to make the `spoil board` move towards the front panel.
+
+4. Align the bottom left corner of the board into the corner of the `bracket` so that the side and bottom edge are flush. Press firmly with your hands across all parts of the board so that it lays flat and feels firmly attached. It should look like this:
 
 <insert photo here>
 
@@ -76,16 +78,20 @@ There are two fixtures typically used with the mill: the aluminum `spoil board` 
 
  Otherplan, can import `.brd` files directly from EAGLE (hooray, no Gerber file nonsense!).
 
- 1. To import your `.brd` file click `Import Files in the Otherplan` setup window and select your file. If you have done this correctly you should see your PCB design on the material in the UI.
+ 1. To import your `.brd` file click `Import Files in the Otherplan` setup window (look for a white heading reading `plans`, its below that) and select your file. If you have done this correctly you should see your PCB design reflected on the material in the UI.
 
  (insert photo of the above here)
 
 
-
 ## Selecting Mills / Configuring Feeds and Speeds
 
-blah blah
+Below the `plans` window is another window wherein you can configure placement of the board, what parts to cut, etc.. Start at the `Tools to Use` section:
 
+1. When you imported your `.brd` file Otherplan should have automatically added a `1/32" Flat End Mill` to the `Tools to Use` window. There are two other slots for `Tools to Use`. Click and Select both `1/64"` and `1/8"`.
+
+2. Wait for the graphical representation of the .brd design to update in the UI.
+
+3. 
 
 ## Flight Check
 
