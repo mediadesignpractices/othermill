@@ -91,7 +91,7 @@ Below the `plans` window is another window wherein you can configure placement o
 
 2. Wait for the graphical representation of the .brd design to update in the UI.
 
-3. 
+3. Click Advanced in the 
 
 ## Flight Check
 
