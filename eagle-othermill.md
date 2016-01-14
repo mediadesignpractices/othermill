@@ -1,4 +1,4 @@
-# Producing PTH PCBs on the Othermill (from EAGLE)
+# Producing Double-Sided PCBs on the Othermill (from EAGLE)
 Casey Anderson, Winter 2016
 
 
