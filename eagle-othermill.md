@@ -8,7 +8,7 @@ This article provides instructions for producing a double-sided `PCB`, designed 
 
 ## CNC overview
 
-A CNC Machine removes precise parts of a multi-layer material that are unnecessary, leaving (in the case of producing circuit boards) conductive traces for current to flow and / or holes to slide components into.
+A CNC Machine removes precise parts of a multi-layer material that are unnecessary, leaving (in the case of producing circuit boards) conductive `traces` for current to flow and / or holes to slide components into.
 
 Material removal is accomplished via a collection of `endmills` (which are similar to drill bits). Larger `endmills` are "faster" or better at easily removing lots of material quickly, whereas smaller `endmills` are "slower" or better at removing material from increasingly tiny areas. Generally one tries to minimize cut time by using the largest `endmills` for as much of the job as possible.
 
@@ -91,7 +91,7 @@ Below the `plans` window is another window wherein you can configure placement o
 
 2. Wait for the graphical representation of the .brd design to update in the UI.
 
-3. Click Advanced in the 
+3. Click Advanced in the
 
 ## Flight Check
 
