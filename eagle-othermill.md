@@ -89,9 +89,17 @@ Below the `plans` window is another window wherein you can configure placement o
 
 1. When you imported your `.brd` file Otherplan should have automatically added a `1/32" Flat End Mill` to the `Tools to Use` window. There are two other slots for `Tools to Use`. Click and Select both `1/64"` and `1/8"`.
 
-2. Wait for the graphical representation of the .brd design to update in the UI.
+2. Wait for the graphical representation of the `.brd` design to update in the UI to reflect the above configuration settings. The goal here is to clear away all of the unnecessary copper.
 
-3. Click Advanced in the
+3. Click the `Advanced` button under the `Tools to Use` section.
+
+4. In the `Advanced Settings` one can change `trace clearance` and `trace cut depth`. `Trace clearance` refers to the amount of clearance a trace gets (the higher the number is the more copper will get cleared away). We prefer to clear away all of the unnecessary copper but leave the `trace depth` at default (`0.006in`). The thicker the traces are, the less likely they are to `de-laminate` (the technical term for coming loose) from the board. In order to get these settings right for your job, some guess-work is involved:
+
+  1. The default setting for `trace clearance` is `0.041 in`. If you run your job with this setting most of the copper on the board will not be removed. You can incrementally increase this setting until the graphical representation of your design in the UI reflects the right amount of copper removed. For example, I prefer to clear away all of the unnecessary copper, so I tend to slowly increase the settings towards `1.0in` (my demo shows as clear when set to a `trace clearance` of `0.9in`) until the graphical representation reflects a board that only has copper for `traces` and `pads`.
+
+  2. Next move to the `Speeds and feeds for tool` section. Here one needs to ill increase the settings for speeds and feeds such that we can complete a double-sided board in approximately 2hrs (as opposed to 4 or 5). This is something that is set per endmill, so change each tool to the following settings:
+
+
 
 ## Flight Check
 
