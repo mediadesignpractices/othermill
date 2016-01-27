@@ -114,7 +114,7 @@ Below the `plans` window is another window wherein you can configure placement o
 * Spindle speed: 16,500 RPM
 * Max pass depth: 0.006" (0.15 mm)
 
-### 1/64" flat end mill Feed rate: 5.669 in/min (144 mm/min)
+### 1/64" flat end mill
 * Feed rate: 15 in/min (381 mm/min)
 * Plunge rate: 15 in/min (381 mm/min)
 * Spindle speed: 16,500 RPM
