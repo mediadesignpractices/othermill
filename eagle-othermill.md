@@ -120,6 +120,7 @@ Below the `plans` window is another window wherein you can configure placement o
 * Spindle speed: 16,500 RPM
 * Max pass depth: 0.002" (0.05mm)
 
+
 ## Flight Check
 
 Before starting your job it is best practice to investigate the board layout as shown in the Otherplan UI. Your primary concern here is to make sure that no unintended connections are made (frequently referred to as `bridging` traces). For example, in the below photo you will see a zoomed in section of the board that will not be cleared away, resulting in a potentially non-functional circuit board (which is particularly painful when you have been waiting for it to finish cutting for two hours):
@@ -133,7 +134,7 @@ In this case the material was not cleared away here because I had not added the 
 ## Starting the Job
 
 
-
 ## Changing Endmills
+
 
 ## Flipping the Board
