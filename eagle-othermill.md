@@ -4,7 +4,7 @@ Casey Anderson, Winter 2016
 
 ## Introduction
 
-This article provides instructions for producing a double-sided `PCB`, designed in EAGLE, on MDP's Othermill. The acronym `PCB` stands for `Printed Circuit Board`. Since this is double-sided, we will stick with `Pin Through Hole` (often shortened to `PTH`) components.
+This article provides instructions for producing a double-sided `PCB`, designed in EAGLE, on MDP's [Othermill](https://othermachine.co/othermill/features/). The acronym `PCB` stands for `Printed Circuit Board`. Since this is double-sided, we will stick with `Pin Through Hole` (often shortened to `PTH`) components.
 
 ## CNC overview
 
