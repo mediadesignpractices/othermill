@@ -103,20 +103,21 @@ Below the `plans` window is another window wherein you can configure placement o
   2. Next move to the `Speeds and feeds for tool` section. Here one needs to increase the settings for speeds and feeds such that we can complete a double-sided board in approximately 2hrs. This is something that is set per `endmill`, so change each tool to the following settings:
 
 ### 1/8" flat end mill
-* Feed rate: 14.173 in/min (360 mm/min)
-* Plunge rate: 1.81 in/min (30 mm/min)
-* Spindle speed: 12,000 RPM
-* Max pass depth: 0.005" (0.13 mm)
+* Feed rate: 60 in/min (1500 mm/min)
+* Plunge rate: 15 in/min (381 mm/min)
+* Spindle speed: 16,500 RPM
+* Max pass depth: 0.006" (0.15 mm)
 
 ### 1/32" flat end mill
-* Feed rate: 14.173 in/min (360 mm/min)
-* Plunge rate: 1.81 in/min (30 mm/min)
-* Spindle speed: 12,000 RPM
+* Feed rate: 60 in/min (1500 mm/min)
+* Plunge rate: 15 in/min (381 mm/min)
+* Spindle speed: 16,500 RPM
 * Max pass depth: 0.006" (0.15 mm)
 
 ### 1/64" flat end mill Feed rate: 5.669 in/min (144 mm/min)
-* Plunge rate: 0.472 in/min (12 mm/min)
-* Spindle speed: 12,000 RPM
+* Feed rate: 15 in/min (381 mm/min)
+* Plunge rate: 15 in/min (381 mm/min)
+* Spindle speed: 16,500 RPM
 * Max pass depth: 0.002" (0.05mm)
 
 ## Flight Check
@@ -130,6 +131,8 @@ In this case the material was not cleared away here because I had not added the 
 !!!! insert photo here of the same part of the board fixed
 
 ## Starting the Job
+
+
 
 ## Changing Endmills
 
