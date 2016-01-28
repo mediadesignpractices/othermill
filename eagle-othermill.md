@@ -131,7 +131,10 @@ In this case the material was not cleared away because I had not added the `1/64
 
 !!!! insert photo here of the same part of the board fixed
 
+This is simply an example of why the flight check is needed, though your experience may vary as dictated by the specifics of your design.
+
 ## Starting the Job
+
 
 
 ## Changing Endmills
