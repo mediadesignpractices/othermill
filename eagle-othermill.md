@@ -127,7 +127,7 @@ Before starting your job it is best practice to investigate the board layout as 
 
 !!!! insert photo here of bridged trace
 
-In this case the material was not cleared away here because I had not added the `1/64" endmill` into the `Tools to Use` window. After correcting my omission, the copper in the area above gets cleared away:
+In this case the material was not cleared away because I had not added the `1/64" endmill` into the `Tools to Use` window. After correcting my omission, the copper in the area above gets cleared away:
 
 !!!! insert photo here of the same part of the board fixed
 
