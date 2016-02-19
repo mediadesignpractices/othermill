@@ -12,7 +12,7 @@ A CNC Machine removes unnecessary parts of a multi-layer material, leaving (in t
 
 Material removal is accomplished via a collection of `endmills` (which are similar to drill bits). Larger `endmills` are "faster" or better at easily removing lots of material quickly, whereas smaller `endmills` are "slower" or better at removing material from increasingly tiny areas. Generally one tries to minimize cut time by using the largest `endmills` for as much of the job as possible.
 
-Two wrenches are magnetically attached to the Othermill in order to facilitate switching out `endmills` from the `collet` (the metal cone that holds the endmills in place), a normal part of completing diferent parts of a job.
+Two wrenches are magnetically attached to the Othermill in order to facilitate switching out `endmills` from the `collet` (the metal cone that holds the `endmills` in place), a normal part of completing different parts of a job.
 
 !!!!!! insert photo of wrenches on machine here
 
@@ -29,7 +29,7 @@ The material for a single sided board is referred to as `FR-1`. A double-sided b
 
 ## Powering the Othermill
 
-Once you have logged into the computer make sure that the mill is connected to via USB and that it's power switch (on the back panel) is in the on position. If the light inside the mill is off the mill is not on.
+Once you have logged into the computer make sure that the mill is connected via USB and that it's power switch (on the back panel) is in the `on` position. The light inside of the mill will turn on when the machine is on.
 
 
 ## Open Otherplan
@@ -43,7 +43,7 @@ There are two fixtures typically used with the mill: the aluminum `spoil board` 
 
 1. Click on `Setup Fixturing` in the setup menu. You will see a new window appear at the bottom of the UI wherein you can either configure the `spoil board` or the `bracket`. Make sure `Bracket` is selected and then click `Locate`.
 
-2. The `spoil board` will move to the inside edge of the front panel of the machine. Before doing anything else, make sure there isn't any leftover debris on the `spoil board`. If you see any fiberglass particles, or small bits of metal, use the vacuum cleaner under the mill to suck it up. When you are sure that the spoil board is clear click `continue` in the window at the bottom of the Otherplan UI.
+2. The `spoil board` will move to the inside edge of the front panel of the machine. Before doing anything else, make sure there isn't any leftover debris on the `spoil board`. If you see any leftover strips of tape, or small bits of metal, use the vacuum cleaner and/or a scraper to clear away all unwanted material. When you are sure that the spoil board is clear click `continue` in the window at the bottom of the Otherplan UI.
 
 3. The mill will prompt you to `Reverse the endmill`. You should only use the `1/16" or 1/8" endmill` for this part, as the others are too delicate to be inserted backwards into the mill (if you unsure which `endmill` is which you can use the Making Lab Calipers to confirm size). Using both of the wrenches, carefully remove whatever `endmill` is already in the `collet`, return it to its clear plastic holder, and locate either the `1/16th or 1/8th endmills`. Once you have located the correct `endmill`, reverse it so the `untapered shaft` is pointing down towards the `spoil board`, slide it some (but not all) of the way into the `collet`, and tighten with the wrenches until snug. Click `Continue` to move to the next step.
 
