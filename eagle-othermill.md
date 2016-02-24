@@ -139,9 +139,10 @@ Select `Traces` and `Holes` in the `Parts to Cut` settings. The `Outline` should
 
 ## Starting the Job
 
-Once
+Finally, click the `Start Cutting ...` to start the job. `Otherplan` will prompt you to change the `endmill` to the smallest size in the `Tools to Use` settings, which should be `1/64"`. Do so using the wrenches at the top of the machine then calibrate the machine for the selected `endmill`. When it is done checking the `z-height` of the newly inserted `endmill` your job will start.
 
 ## Changing Endmills
 
+When `Otherplan` is finished using a particular sized `endmill` it will prompt you to switch to increasingly larger tools. We recommend using the vacuum to clean out the machine before changing `endmills`.  Doing so will increase the lifespan of each of the `endmills`. Similarly, when changing endmills one should take a moment to make sure that the material on the spoilboard has not started to come loose. Firmly applying pressure to it across its entire surface seems to be sufficient.
 
 ## Flipping the Board
