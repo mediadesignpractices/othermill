@@ -143,6 +143,25 @@ Finally, click the `Start Cutting ...` to start the job. `Otherplan` will prompt
 
 ## Changing Endmills
 
-When `Otherplan` is finished using a particular sized `endmill` it will prompt you to switch to increasingly larger tools. We recommend using the vacuum to clean out the machine before changing `endmills`.  Doing so will increase the lifespan of each of the `endmills`. Similarly, when changing endmills one should take a moment to make sure that the material on the spoilboard has not started to come loose. Firmly applying pressure to it across its entire surface seems to be sufficient.
+When `Otherplan` is finished using a particular sized `endmill` it will prompt you to switch to increasingly larger tools. We recommend using the vacuum to clean out the machine before changing `endmills`.  Doing so will increase the lifespan of each of the `endmills`. Similarly, when changing `endmills` one should take a moment to make sure that the material on the `spoilboard` has not started to come loose. Firmly applying pressure across its entire surface is sufficient.
 
 ## Flipping the Board
+
+1. Remove the `FR2` material from the `spoilboard`.
+2. Check to make sure the `spoilboard` is free of leftover debris or bits of tape.
+3. Remove, and dispose of, all tape from the uncut side of the `FR2` board.
+4. Cover the top side of the board with new double-sided tape (including the part that we just cut).
+5. Carefully align the `FR2` material, bottom-side up, into the bottom right corner of the `spoilboard`, making sure to align the material to the bottom and side edge as accurately as possible.
+6. Firmly apply pressure across the entire surface of the `FR2` material to ensure that it will not come loose from the `spoilboard`.
+7. In the `setup` menu change `Side` to `Bottom`.
+8. Make sure that `Traces`, `Holes`, and `Outline` are all selected in `Parts to Cut`.
+9. Click `Start Cutting ...`
+10. Change `endmills` as instructed by `Otherplan` until the job is complete.
+
+## Cleanup
+
+The campfire rule is in effect here: leave the mill in a better condition than you found it. At a minimum this should include:
+* vacuuming all debris/metal filings out of the machine
+* checking to make sure that there is no leftover bits of tape stuck on the `spoilboard`
+* returning all copper materials (`FR1` and `FR2`) to air tight containers or ziplock bags
+* returning all `endmills` to their plastic containers (and maintaining the ordered arrangement of said [smallest to biggest])
