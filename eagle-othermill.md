@@ -127,7 +127,7 @@ Before starting your job it is best practice to investigate the board layout as 
 
 ![](pot_bridge.png)
 
-In this case the material was not cleared away because I had not added the `1/64" endmill` into the `Tools to Use` window. After correcting my omission, the copper in the area above gets cleared away:
+In this case the material was not cleared away because I had not added the `1/64" endmill` into the `Tools to Use` window. After correcting my omission, the copper between each solder pad on my potentiometer is removed:
 
 ![](fixed_bridge.png)
 
