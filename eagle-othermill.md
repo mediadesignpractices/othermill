@@ -84,7 +84,7 @@ There are two fixtures typically used with the mill: the aluminum `spoil board` 
 
  1. To import your `.brd` file click `Import Files in the Otherplan` setup window (look for a white heading reading `plans`, its below that) and select your file. If you have done this correctly you should see your PCB design reflected on the material in the UI.
 
-!!!! insert photo of UI preview here
+ ![](brd_preview.png)
 
 ## Selecting Mills / Configuring Feeds and Speeds
 
