@@ -14,7 +14,7 @@ Material removal is accomplished via a collection of `endmills` (which are simil
 
 Two wrenches are magnetically attached to the Othermill in order to facilitate switching out `endmills` from the `collet` (the metal cone that holds the `endmills` in place), a normal part of completing different parts of a job.
 
-!!!!!! insert photo of wrenches on machine here
+![](wrenches.png)
 
 You can complete most circuit board jobs with the following `endmills`: `1/64"`, `1/32"`, and `1/8"`.
 
