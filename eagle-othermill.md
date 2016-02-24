@@ -129,7 +129,7 @@ Before starting your job it is best practice to investigate the board layout as 
 
 In this case the material was not cleared away because I had not added the `1/64" endmill` into the `Tools to Use` window. After correcting my omission, the copper in the area above gets cleared away:
 
-!!!! insert photo here of the same part of the board fixed
+![](fixed_bridge.png)
 
 This is simply an example of why the flight check is needed, though your experience may vary as dictated by the specifics of your design.
 
