@@ -123,9 +123,9 @@ Below the `plans` window is another window wherein you can configure placement o
 
 ## Flight Check
 
-Before starting your job it is best practice to investigate the board layout as shown in the Otherplan UI. Your primary concern here is to make sure that no unintended connections are made (frequently referred to as `bridging` traces). For example, in the below photo you will see a zoomed in section of the board that will not be cleared away, resulting in a potentially non-functional circuit board (which is particularly painful when you have been waiting for it to finish cutting for two hours):
+Before starting your job it is best practice to investigate the board layout as shown in Otherplan for any problems. Your primary concern here is to make sure that no unintended connections are made (frequently referred to as `bridging` traces). For example, in the below photo you will see a zoomed in section of the board wherein the three solder pads of a potentiometer will remain connected, resulting in a  non-functional circuit board (which is particularly painful when you have been waiting for it to finish cutting for two hours):
 
-!!!! insert photo here of bridged trace
+![](pot_bridge.png)
 
 In this case the material was not cleared away because I had not added the `1/64" endmill` into the `Tools to Use` window. After correcting my omission, the copper in the area above gets cleared away:
 
@@ -133,9 +133,13 @@ In this case the material was not cleared away because I had not added the `1/64
 
 This is simply an example of why the flight check is needed, though your experience may vary as dictated by the specifics of your design.
 
+## Parts to Cut
+
+Select `Traces` and `Holes` in the `Parts to Cut` settings. The `Outline` should only be cut on the bottom side of a double sided board (otherwise alignment will be impossible between the two sides), so leave this off for the top side. Incidentally, `Otherplan` does not like it if you try to start the job on the bottom side (no idea why).
+
 ## Starting the Job
 
-
+Once
 
 ## Changing Endmills
 
