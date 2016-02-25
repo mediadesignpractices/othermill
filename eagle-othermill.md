@@ -24,7 +24,9 @@ Circuit boards are generally multi-layered. They consist of a synthetic substrat
 
 * Double Sided: consisting of a layer of copper on both sides of the substrate.
 
-The material for a single sided board is referred to as `FR-1`. A double-sided board is typically referred to as `FR-2`. It is important to note that copper oxidizes (rusts) over time so all circuit board blanks must remain in an air-tight container when not in use.
+The material for a PCB is referred to as `FR-1`. Both single and double-sided versions are available. FR-1 consists of a thin sheet of copper lamited to a sheet of phenolic resin. Most circuit boards are made with a material called `FR-4`, which has similar electrical properties but uses fiberglass as its backing material. As fiberglass dust can be harmful, you should always use FR-1 when making circuit boards on the Othermill.
+
+It is important to note that copper oxidizes (rusts) over time so all circuit board blanks must remain in an air-tight container when not in use.
 
 
 ## Powering the Othermill
@@ -147,12 +149,12 @@ When `Otherplan` is finished using a particular sized `endmill` it will prompt y
 
 ## Flipping the Board
 
-1. Remove the `FR2` material from the `spoilboard`.
+1. Remove the `FR-1` material from the `spoilboard`.
 2. Check to make sure the `spoilboard` is free of leftover debris or bits of tape.
-3. Remove, and dispose of, all tape from the uncut side of the `FR2` board.
+3. Remove, and dispose of, all tape from the uncut side of the `FR-1` board.
 4. Cover the top side of the board with new double-sided tape (including the part that we just cut).
-5. Carefully align the `FR2` material, bottom-side up, into the bottom right corner of the `spoilboard`, making sure to align the material to the bottom and side edge as accurately as possible.
-6. Firmly apply pressure across the entire surface of the `FR2` material to ensure that it will not come loose from the `spoilboard`.
+5. Carefully align the `FR-1` material, bottom-side up, into the bottom right corner of the `spoilboard`, making sure to align the material to the bottom and side edge as accurately as possible.
+6. Firmly apply pressure across the entire surface of the `FR-1` material to ensure that it will not come loose from the `spoilboard`.
 7. In the `setup` menu change `Side` to `Bottom`.
 8. Make sure that `Traces`, `Holes`, and `Outline` are all selected in `Parts to Cut`.
 9. Click `Start Cutting ...`
@@ -163,5 +165,5 @@ When `Otherplan` is finished using a particular sized `endmill` it will prompt y
 The campfire rule is in effect here: leave the mill in better condition than you found it. At a minimum this should include:
 * vacuuming all debris/metal filings out of the machine
 * checking to make sure that there is no leftover bits of tape stuck on the `spoilboard`
-* returning all copper materials (`FR1` and `FR2`) to air tight containers or ziplock bags
+* returning all copper materials (`FR1-`) to air tight containers or ziplock bags
 * returning all `endmills` to their plastic containers (and maintaining the ordered arrangement of said [smallest to biggest])
