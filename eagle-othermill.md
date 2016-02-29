@@ -162,8 +162,8 @@ When `Otherplan` is finished using a particular sized `endmill` it will prompt y
 
 ## Cleanup
 
-The campfire rule is in effect here: leave the mill in better condition than you found it. At a minimum this should include:
+The campsite rule is in effect here: leave the mill in better condition than you found it. At a minimum this should include:
 * vacuuming all debris/metal filings out of the machine
 * checking to make sure that there is no leftover bits of tape stuck on the `spoilboard`
-* returning all copper materials (`FR1-`) to air tight containers or ziplock bags
+* returning all copper materials (`FR-1`) to air tight containers or ziplock bags
 * returning all `endmills` to their plastic containers (and maintaining the ordered arrangement of said [smallest to biggest])
