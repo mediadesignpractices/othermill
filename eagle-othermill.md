@@ -77,7 +77,7 @@ There are two fixtures typically used with the mill: the aluminum `spoil board` 
 
 4. Align the bottom left corner of the board into the corner of the `bracket` so that the side and bottom edge are flush. Press firmly with your hands across all parts of the board so that it lays flat and feels firmly attached. It should look like this:
 
-!!!! insert photo of properly aligned board here
+![](om_alignment.png)
 
 
 ## Importing your EAGLE file into Otherplan
