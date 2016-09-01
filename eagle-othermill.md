@@ -24,7 +24,7 @@ Circuit boards are generally multi-layered. They consist of a synthetic substrat
 
 * Double Sided: consisting of a layer of copper on both sides of the substrate.
 
-The material for a PCB is referred to as `FR-1`. Both single and double-sided versions are available. FR-1 consists of a thin sheet of copper lamited to a sheet of phenolic resin. Most circuit boards are made with a material called `FR-4`, which has similar electrical properties but uses fiberglass as its backing material. As fiberglass dust can be harmful, you should always use FR-1 when making circuit boards on the Othermill.
+The material for a PCB is referred to as `FR-1`. Both single and double-sided versions are available. FR-1 consists of a thin sheet of copper laminated to a sheet of phenolic resin. Most circuit boards are made with a material called `FR-4`, which has similar electrical properties but uses fiberglass as its backing material. As fiberglass dust can be harmful, you should always use `FR-1` when making circuit boards on the Othermill.
 
 It is important to note that copper oxidizes (rusts) over time so all circuit board blanks must remain in an air-tight container when not in use.
 
