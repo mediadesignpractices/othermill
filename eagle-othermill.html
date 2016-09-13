@@ -1,0 +1,141 @@
+Casey Anderson, Winter 2016
+<h2>Introduction</h2>
+This article provides instructions for producing a double-sided <code>PCB</code>, designed in EAGLE, on MDP&#39;s <a href="https://othermachine.co/othermill/features/">Othermill</a>. The acronym <code>PCB</code> stands for <code>Printed Circuit Board</code>. Since this is double-sided, we will stick with <code>Pin Through Hole</code> (often shortened to <code>PTH</code>) components.
+<h2>CNC overview</h2>
+A CNC Machine removes unnecessary parts of a multi-layer material, leaving (in the case of producing circuit boards) conductive <code>traces</code> for current to flow and / or <code>holes</code> to slide components into.
+<br/><br/>Material removal is accomplished via a collection of <code>endmills</code> (which are similar to drill bits). Larger <code>endmills</code> are &quot;faster&quot; or better at easily removing lots of material quickly, whereas smaller <code>endmills</code> are &quot;slower&quot; or better at removing material from increasingly tiny areas. Generally one tries to minimize cut time by using the largest <code>endmills</code> for as much of the job as possible.
+<br/><br/>Two wrenches are magnetically attached to the Othermill in order to facilitate switching out <code>endmills</code> from the <code>collet</code> (the metal cone that holds the <code>endmills</code> in place), a normal part of completing different parts of a job.
+<br/><br/><img src="/Users/mdp/git/othermill/wrenches.png" alt="">
+<br/><br/>You can complete most circuit board jobs with the following <code>endmills</code>: <code>1/64&quot;</code>, <code>1/32&quot;</code>, and <code>1/8&quot;</code>.
+<br/><br/>Circuit boards are generally multi-layered. They consist of a synthetic substrate (to mount and hold <code>traces</code> and components in place, generally made with a synthetic resin bonded paper) with a layer of Copper (to conduct current) adhered to it. The Othermill can make circuit boards from two types of <code>blanks</code>:
+<ul>
+<li>Single Sided: a layer of copper on one side of the substrate.
+</li>
+<li>Double Sided: consisting of a layer of copper on both sides of the substrate.
+</li>
+</ul>
+The material for a PCB is referred to as <code>FR-1</code>. Both single and double-sided versions are available. FR-1 consists of a thin sheet of copper laminated to a sheet of phenolic resin. Most circuit boards are made with a material called <code>FR-4</code>, which has similar electrical properties but uses fiberglass as its backing material. As fiberglass dust can be harmful, you should always use <code>FR-1</code> when making circuit boards on the Othermill.
+<br/><br/>It is important to note that copper oxidizes (rusts) over time so all circuit board blanks must remain in an air-tight container when not in use.
+<h2>Powering the Othermill</h2>
+Once you have logged into the computer make sure that the mill is connected via USB and that it&#39;s power switch (on the back panel) is in the <code>on</code> position. The light inside of the mill will turn on when the machine is on.
+<h2>Open Otherplan</h2>
+Launch Otherplan (the software that talks to the mill). If the mill is connected and on, you should see a warning at the bottom of the window suggesting that you <code>Home the Machine</code>. Click <code>Start Homing</code> and wait until it finishes resetting each motor to its default position.
+<h2>Setup Fixturing</h2>
+There are two fixtures typically used with the mill: the aluminum <code>spoil board</code> and the <code>bracket</code>. We never remove the <code>spoil board</code> and prefer to keep the <code>bracket</code> attached at all times. The <code>bracket</code> is intended to make alignment easier when cutting on both sides of the same object (example: double sided circuit board). Do not remove it unless you have a reason to.
+<ol>
+<li>Click on <code>Setup Fixturing</code> in the setup menu. You will see a new window appear at the bottom of the UI wherein you can either configure the <code>spoil board</code> or the <code>bracket</code>. Make sure <code>Bracket</code> is selected and then click <code>Locate</code>.
+</li>
+<li>The <code>spoil board</code> will move to the inside edge of the front panel of the machine. Before doing anything else, make sure there isn&#39;t any leftover debris on the <code>spoil board</code>. If you see any leftover strips of tape, or small bits of metal, use the vacuum cleaner and/or a scraper to clear away all unwanted material. When you are sure that the spoil board is clear click <code>continue</code> in the window at the bottom of the Otherplan UI.
+</li>
+<li>The mill will prompt you to <code>Reverse the endmill</code>. You should only use the <code>1/16&quot; or 1/8&quot; endmill</code> for this part, as the others are too delicate to be inserted backwards into the mill (if you unsure which <code>endmill</code> is which you can use the Making Lab Calipers to confirm size). Using both of the wrenches, carefully remove whatever <code>endmill</code> is already in the <code>collet</code>, return it to its clear plastic holder, and locate either the <code>1/16th or 1/8th endmills</code>. Once you have located the correct <code>endmill</code>, reverse it so the <code>untapered shaft</code> is pointing down towards the <code>spoil board</code>, slide it some (but not all) of the way into the <code>collet</code>, and tighten with the wrenches until snug. Click <code>Continue</code> to move to the next step.
+</li>
+</ol>
+<br/><br/><img src="/Users/mdp/git/othermill/locating_bracket.png" alt="">
+<ol>
+<li>The mill will return to home.
+</li>
+<li>The window at the bottom will instruct you to <code>Align tool tip to bottom of carriage</code>. Look at the graphic above the spoil board in the UI and adjust (by clicking either<code>Z+</code> or <code>-Z</code>) the position of the bottom tip of the <code>endmill</code> such that it is anywhere between the edges of the <code>safe zone</code>. The bottom-most point of the <code>endmill</code> doesn&#39;t need to be exactly in the middle, just somewhere within those two lines. When you are done adjusting the height of the <code>endmill</code> click continue.
+</li>
+<li>Otherplan will prompt you to double check that there is nothing on the <code>spoil board</code>. If it is clear, simply click <code>Locate</code>. The mill will automatically calculate its height relative to the <code>spoil board</code> and then check to make sure the <code>bracket</code> is properly attached. Every once in a while the mill throws an error in the midst of the location process because it thinks it has found something conductive that is not the <code>spoil board</code>. If this happens, check to make sure there are not any metal filings, or other debris, on the <code>spoil board</code> and try to restart the location process. If the error persists I have successfully resolved this by power cycling the mill. When the mill returns to home you are done with this part of the setup process.
+</li>
+</ol>
+<h2>Setup Material (pt. 1)</h2>
+<ol>
+<li>Click <code>Setup material</code> in the setup window.
+</li>
+<li>A new window should pop up at the bottom wherein you can set the material properties. Choose <code>Double-Sided</code> and then click <code>Continue</code>.
+</li>
+<li>Next simply click <code>Align to Bracket</code> and then <code>Done</code>.
+</li>
+</ol>
+<h2>Setup Material (pt. 2)</h2>
+<ol>
+<li>Cover one side of the Circuit board evenly with double sided tape. Be careful not to overlap any strips of tape, the board needs to sit as evenly on the <code>spoil board</code> as possible.
+</li>
+<li>Trim any tape that hangs past the edge. Tape on the edges could also make the board uneven on the <code>spoil board</code> surface. I use a hardware store razor blade for this but an Xacto knife would also work.
+</li>
+<li>Below the <code>setup</code> window you will see another window dedicated to moving things around. Click <code>Loading</code> to make the <code>spoil board</code> move towards the front panel.
+</li>
+<li>Align the bottom left corner of the board into the corner of the <code>bracket</code> so that the side and bottom edge are flush. Press firmly with your hands across all parts of the board so that it lays flat and feels firmly attached. It should look like this:
+</li>
+</ol>
+<img src="/Users/mdp/git/othermill/om_alignment.jpg" alt="">
+<h2>Importing your EAGLE file into Otherplan</h2>
+Otherplan, can import <code>.brd</code> files directly from EAGLE (hooray, no Gerber file nonsense!).
+<ol>
+<li>To import your <code>.brd</code> file click <code>Import Files</code> in the <code>Otherplan</code> setup window (look for a white heading reading <code>plans</code>, it&#39;s below that) and select your file. If you have done this correctly you should see your PCB design reflected on the material in the UI.
+<img src="/Users/mdp/git/othermill/brd_preview.png" alt="">
+</li>
+</ol>
+<h2>Selecting Mills / Configuring Feeds and Speeds</h2>
+Below the <code>plans</code> window is another window wherein you can configure placement of the board, what parts to cut, etc.. Start at the <code>Tools to Use</code> section:
+<ol>
+<li>When you imported your <code>.brd</code> file Otherplan should have automatically added a <code>1/32&quot; Flat End Mill</code> to the <code>Tools to Use</code> window. There are two other slots for <code>Tools to Use</code>. Click and Select both <code>1/64&quot;</code> and <code>1/8&quot;</code>.
+</li>
+<li>Wait for the graphical representation of the <code>.brd</code> design to update in the UI to reflect the above configuration settings. The goal here is to clear away all of the unnecessary copper.
+</li>
+<li>Click the <code>Advanced</code> button under the <code>Tools to Use</code> section.
+</li>
+<li>In the <code>Advanced Settings</code> one can change <code>trace clearance</code> and <code>trace cut depth</code>. <code>Trace clearance</code> refers to the amount of clearance a trace gets (the higher the number the more copper will be removed). We prefer to clear away all of the unnecessary copper but leave the <code>trace depth</code> at default (<code>0.006in</code>). The thicker the traces are, the less likely they are to <code>de-laminate</code> (the technical term for coming loose from the substrate) from the board. In order to get these settings right for your job, some guess-work is involved:
+<ol>
+<li>The default setting for <code>trace clearance</code> is <code>0.041 in</code>. If you run your job with this setting most of the copper on the board will not be removed. You can incrementally increase this setting until the graphical representation of your design in the UI reflects the right amount of copper removed. For example, I prefer to clear away all of the unnecessary copper, so I tend to slowly increase the settings towards <code>1.0in</code> (my demo .brd file shows as clear when set to a <code>trace clearance</code> of <code>0.8in</code>) until the graphical representation reflects a board that only has copper for <code>traces</code> and <code>pads</code>.
+</li>
+<li>Next move to the <code>Speeds and feeds for tool</code> section. Here one needs to increase the settings for speeds and feeds such that we can complete a double-sided board in approximately 2hrs. This is something that is set per <code>endmill</code>, so change each tool to the following settings:
+</li>
+</ol>
+</li>
+</ol>
+<h3>1/8&quot; flat end mill</h3>
+<ul>
+<li>Feed rate: 60 in/min (1500 mm/min)</li>
+<li>Plunge rate: 15 in/min (381 mm/min)</li>
+<li>Spindle speed: 16,500 RPM</li>
+<li>Max pass depth: 0.006&quot; (0.15 mm)</li>
+</ul>
+<h3>1/32&quot; flat end mill</h3>
+<ul>
+<li>Feed rate: 60 in/min (1500 mm/min)</li>
+<li>Plunge rate: 15 in/min (381 mm/min)</li>
+<li>Spindle speed: 16,500 RPM</li>
+<li>Max pass depth: 0.006&quot; (0.15 mm)</li>
+</ul>
+<h3>1/64&quot; flat end mill</h3>
+<ul>
+<li>Feed rate: 15 in/min (381 mm/min)</li>
+<li>Plunge rate: 15 in/min (381 mm/min)</li>
+<li>Spindle speed: 16,500 RPM</li>
+<li>Max pass depth: 0.002&quot; (0.05mm)</li>
+</ul>
+<h2>Flight Check</h2>
+Before starting your job it is best practice to investigate the board layout as shown in Otherplan for any problems. Your primary concern here is to make sure that no unintended connections are made (frequently referred to as <code>bridging</code> traces). For example, in the below photo you will see a zoomed in section of the board wherein the three solder pads of a potentiometer will remain connected, resulting in a  non-functional circuit board (which is particularly painful when you have been waiting for it to finish cutting for two hours):
+<br/><br/><img src="/Users/mdp/git/othermill/pot_bridge.png" alt="">
+<br/><br/>In this case the material was not cleared away because I had not added the <code>1/64&quot; endmill</code> into the <code>Tools to Use</code> window. After correcting my omission, the copper between each solder pad on my potentiometer is removed:
+<br/><br/><img src="/Users/mdp/git/othermill/fixed_bridge.png" alt="">
+<br/><br/>This is simply an example of why the flight check is needed, though your experience may vary as dictated by the specifics of your design.
+<h2>Parts to Cut</h2>
+Select <code>Traces</code> and <code>Holes</code> in the <code>Parts to Cut</code> settings. The <code>Outline</code> should only be cut on the bottom side of a double sided board (otherwise alignment will be impossible between the two sides), so leave this off for the top side. Incidentally, <code>Otherplan</code> does not like it if you try to start the job on the bottom side (no idea why).
+<h2>Starting the Job</h2>
+Finally, click the <code>Start Cutting ...</code> to start the job. <code>Otherplan</code> will prompt you to change the <code>endmill</code> to the smallest size in the <code>Tools to Use</code> settings, which should be <code>1/64&quot;</code>. Do so using the wrenches at the top of the machine then calibrate the machine for the selected <code>endmill</code>. When it is done checking the <code>z-height</code> of the newly inserted <code>endmill</code> your job will start.
+<h2>Changing Endmills</h2>
+When <code>Otherplan</code> is finished using a particular sized <code>endmill</code> it will prompt you to switch to increasingly larger tools. We recommend using the vacuum to clean out the machine before changing <code>endmills</code>.  Doing so will increase the lifespan of each of the <code>endmills</code>. Similarly, when changing <code>endmills</code> one should take a moment to make sure that the material on the <code>spoilboard</code> has not started to come loose. Firmly applying pressure across its entire surface is sufficient.
+<h2>Flipping the Board</h2>
+<ol>
+<li>Remove the <code>FR-1</code> material from the <code>spoilboard</code>.</li>
+<li>Check to make sure the <code>spoilboard</code> is free of leftover debris or bits of tape.</li>
+<li>Remove, and dispose of, all tape from the uncut side of the <code>FR-1</code> board.</li>
+<li>Cover the top side of the board with new double-sided tape (including the part that we just cut).</li>
+<li>Carefully align the <code>FR-1</code> material, bottom-side up, into the bottom right corner of the <code>spoilboard</code>, making sure to align the material to the bottom and side edge as accurately as possible.</li>
+<li>Firmly apply pressure across the entire surface of the <code>FR-1</code> material to ensure that it will not come loose from the <code>spoilboard</code>.</li>
+<li>In the <code>setup</code> menu change <code>Side</code> to <code>Bottom</code>.</li>
+<li>Make sure that <code>Traces</code>, <code>Holes</code>, and <code>Outline</code> are all selected in <code>Parts to Cut</code>.</li>
+<li>Click <code>Start Cutting ...</code></li>
+<li>Change <code>endmills</code> as instructed by <code>Otherplan</code> until the job is complete.</li>
+</ol>
+<h2>Cleanup</h2>
+The campsite rule is in effect here: leave the mill in better condition than you found it. At a minimum this should include:
+<ul>
+<li>vacuuming all debris/metal filings out of the machine</li>
+<li>checking to make sure that there is no leftover bits of tape stuck on the <code>spoilboard</code></li>
+<li>returning all copper materials (<code>FR-1</code>) to air tight containers or ziplock bags</li>
+<li>returning all <code>endmills</code> to their plastic containers (and maintaining the ordered arrangement of said [smallest to biggest])</li>
+</ul>
